@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeta Diário</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @font-face {
+            font-family: 'Old London';
+            src: url(OldLondon.ttf) format('truetype'), url(OldLondonAlternate.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format ()
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -truetype-aat (Apple Advanced Typography)
+            -svg
+            */
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.5);;
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .d1 {
+            animation: appear 0.8s linear;
+            animation-timeline: view();
+        }
+
+        h1 {
+            background-color: whitesmoke;
+            padding: 20px 0px;
+            font-family: 'Old London', sans-serif;
+            font-size: 10vw;
+            font-weight: normal;
+            font-style: normal;
+            text-align: center;
+        }
+
+        nav {
+        padding: 10px 0px 10px 5px;
+        border-bottom: 2px solid black;
+        }
+        nav > a {
+            display: inline-block;
+            background-color:  white ; color: black;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+        nav > a:hover {
+            background-color: black; color: white;
+            padding: 5px 20px;
+            transition: 0.5s;
+        }
+
+        h2 {
+            font-size: 15vw;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            display: block;
+            position: relative;
+        }
+
+        .h2 {
+            font-size: 13vw;
+        }
+
+        h3 {
+            text-align: right;
+            margin-right: 17vw;
+        }
+
+        .h4 {
+            display: block;
+            background-color: black; color: white;
+            font-size: 20px;
+            text-align: center;
+            margin: 10px 30px;
+        }
+
+
+        .strong {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            margin-left: 50px;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        p {
+            padding-left: 60px;
+            padding-top: 10px;
+            font-size: 18px;
+            margin-right: 10vw;
+        }
+
+        #inline {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+        }
+
+        img {
+            width: 12%;
+            height: auto;
+        }
+
+        .super2 {
+            border: 2px solid black;
+            width: 70%;
+            height: 15%;
+            margin-left: 13vw;
+        }
+
+        .super3 {
+            border: 2px solid black;
+            width: 50%;
+            height: 500px;
+            margin-left: 13vw;
+        }
+
+        .linha {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            width: 100%;
+        }
+
+        .linha2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+            margin: 0px 20px;
+        }
+
+        footer {
+        display: block;
+        background-color: black;
+        padding: 10px;
+    }
+    
+    footer img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .tudum {
+        position: absolute;
+        width: 100px;
+        left: 50%;
+
+    }
+    </style>
+</head>
+<body>
+            <header>
+                <h1 class="linha">Planeta <img src="planeta diario-Photoroom.png" alt="planeta Diário"> Diário</h1>
+            </header>
+            <nav>
+                <a href="index.html" id="n1"> Home</a>
+                <a href="index3.html" id="n2"> Personagens</a>
+            </nav>
+                <div class="d1">
+                    <h2 class=".autoshow">"S" É DE...</h2>
+                    <img src="superman 6.jpg" alt="" class="super2">
+                    <h3>(Foto por Jimmy Olsen)</h3>
+                    <p><strong>...SUPERMAN. Ou pelo menos é assim que ele se identificou quando deu esta entrevista para o Planeta Diário, logo após a recente crise. </strong></p>
+                    <h3 class="strong">por CLARK KENT, repórter do Planeta Diário.</h3>
+                    <p>Aparentemente pelos seus 21 anos, ele poderia se passar por um estudante formado a caminho de uma praia em Palm Beach, exceto pelo uniforme vermelho e azul, e o fato de que ele entrou pela janela... é uma história nota dez.</p>
+                </div>
+                <section class="d1">
+                    <article>
+                        <p><strong>Obviamente, Superman não é seu nome verdadeiro." Eu digo.</strong></p>
+                        <p>
+                            Ele sorri. “Meu pai que o criou.”
+                            
+                            “Você não está um pouco nervoso do quanto esse nome irá ser entendido? Digo, não é um pouco presunçoso?”
+                        
+                            “Eu não sei, vamos ter que ver,” ele disse, “Eu acho que a parte importante é que pode ser algo super no início desse nome, mas na hora que chegar no fim, verá que ainda é só um homem.”
+                        </p>
+                    </article>
+                </section>
+                    
+                <section class="d1">
+                    <article>
+                        <p>
+                            Ele declina um pedido educado para dizer seu nome verdadeiro e em que parte do país ele cresceu, mas pelo seu tom de voz e vernaculos, alguém poderia chegar à conclusão de que ele veio do litoral leste. mas quanto ao ponto de origem, isso é menos interessante.
+                            
+                            “Se não podemos saber de onde você veio recentemente, suponho que a próxima questão obvia é, onde você nasceu?”
+                            
+                            “Em um mundo distante chamado Krypton. Mas entenda: eu vim pra cá quando criança, por isso não sabia muito de minha história até recentemente. Eu sabia que eu não era daqui, mas além disso… nada.”
+                        </p>
+                    </article>
+                </section>
+                
+                <section class="d1">
+                    <article>
+                        <p>“Você tem esses poderes a vida toda?”
+                        
+                        “A maioria, sim. Eu lembro que a primeira vez que voei, eu estava olhando pra um passarinho e pensando como seria incrível. Então, eu notei que estava próximo dele. Por um segundo eu pensei que ele tinha pousado onde eu estava, então olhei pra baixo e descobri que estava quilômetros acima do solo. Me assustou muito.”
+                        
+                        “Então, qual é a do uniforme vermelho e azul?”
+                        
+                        “O tecido, na forma de um cobertor, veio comigo de Krypton. Ele não pode ser queimado, rasgado, cortado… Ou tingido, infelizmente. É a única coisa que posso usar sem que se destruída pelo atrito no ar."</p>
+                    </article>
+                </section>
+                <section class="d1">
+                <article>
+                        <p>"Aqui é meu lugar.” Ele diz em tom mais sério de novo. “Eu fui criado nesse país. Ele tem suas falhas? Sim. Tem seus momentos de grandeza? Sim. No fundo, é meu lar; e eu sempre carregarei esses valores comigo. Mas se eu fizer o que eu posso fazer só pros EUA, isso iria desestabilizar o mundo todo. Isso poderia até mesmo levar à guerra.</p>
+                </article>
+        </section>
+
+                    <section class="d1">
+                        <article><p>“Por isso, estou aqui pra fazer o que posso, onde posso, seja nos EUA ou outro lugar. Mas eu nunca poderei ficar envolvido com políticos. Não tem nada político em um tsunami, ou um terremoto, ou um tornado... Nada político em um atirador manter inocentes como reféns em um banco ou um caminhão fora de controle invadir uma rua lotada. Esses são os tipos de coisas que quero me envolver, onde posso fazer a diferença sem me tornar um instrumento político.”</p></article>
+                    </section>
+                    
+                    <section class="d1">
+                        <article><p>“Muitas pessoas ficarão infelizes por ouvir isso. Eu acho que o Pentágono já estava começando a sonhar com uma caminhada sua até a China ou Afeganistão e partindo tanques ao meio, derrubando governos e destruindo frotas inteiras.”</p></article>
+                    </section>
+                    
+                    <section class="linha2"class="d1">
+                        <article><p>“E eu entendo isso,” Ele disse. “Mas se eu começar a cair nessa estrada, então não posso servir à humanidade como um todo, que é o que sinto que estou aqui pra fazer. Se eu me tornar uma extensão de qualquer governo ou administração, então eu perco o resto do mundo, e haverá muitas vezes quando precisaremos do resto do mundo do nosso lado em caso de outra crise planetária."</p></article>
+                    </section>
+                    <div class="d1">
+                        <h2>SOB UM CÉU PARTIDO</h2>
+                        <h4 class="h4">PERSPECTIVA DO PLANETA DIÁRIO</h4>
+                        <h3 class="strong">
+                            por LOIS LANE
+                            repórter do Planeta Diário.
+                        </h3>
+                    </div>
+
+                    <section class="d1">
+                        <article>
+                            <p><strong>METRÓPOLIS –</strong> Quando era uma garotinha, eu era fanática por história. Em particular, adorava ler sobre Edward R. Murrow, Walter Cronkite e outros repórteres que narraram o bombardeio a Londres durante a Segunda Guerra Mundial. Eu me perguntava como seria cobrir uma cidade sob cerco e mesmo trabalhando como repórter, imaginava que o único jeito que poderia descobrir seria viajar para algum lugar, reunir histórias de lugares como Líbano ou Beirute ou Iraque, já que essas coisas nunca aconteciam dentro dos Estados Unidos. Acontecia sempre em outro lugar.</p>
+                        </article>
+                    </section>
+
+                    <section class="d1">
+                        <article>
+                            <p>Ontem, tudo mudou. Ontem, o céu foi partido e até mesmo levara… dessa ferida, alguma coisa profunda e perigosa entrou na vida desta cidade, deste país, e deste mundo. Ontem, distantes e vastos povos de cada canto do globo foram unidos na possibilidade de aniquilação. Ontem, fomos colocados no limite do abismo.</p>
+                        </article>
+                    </section>
+
+                    <section class="d1">
+                        <article>
+                            <p>Ontem, o hoje parecia impossível. Mas o hoje veio, e ainda estamos aqui, em grande parte devido à chegada de um homem, que se ficou ao nosso lado contra todas as possibilidades.</p>
+                        </article>
+                    </section>
+
+                    <section class="linha2" class="d1">
+                        <article>
+                            <p>
+                                E por causa desse homem, nós agora temos um amanhã que não esperávamos. Ele é, na verdade, o homem do amanhã.
+                            </p>
+                        </article>
+                    </section>
+                    <div class="d1">
+                        <h2 class="h2" class=".autoshow">INVASÃO ALIENÍGENA EM METROPOLIS</h2>
+                        <img src="superman 2.jpg" alt="" class="super2">
+                        <h3>(Foto por Jimmy Olsen)</h3>
+                        <h3 class="strong"><strong>por LOIS LANE
+                            repórter do Planeta Diário.</strong></h3>
+                    </div>
+                    <section class="d1">
+                        <article>
+                            <p>Eu e Jimmy estávamos discutindo com nosso editor-chefe Perry White, quando uma nave alienígena chegou em Metropolis e em poucos minutos tomou conta dos céus e das ruas da cidade. Eu e Jimmy corremos para vermos de perto.</p>
+                        </article>
+                    </section>
+                    <section class="d1">
+                        <img src="superman 1.jpg" alt="robo" class="super3">
+                        <article id="inline">
+                            <p>O sujeito se manisfestou na televisão e se identificou como Brainiac, um "destruidor de planetas" que rouba o conhecimento de cada planeta que invade.</p>
+                        </article>
+                    </section>
+                    <section class="d1">
+                        <article>
+                            <p>Os esforços do exército americano pareciam inúteis perante aquela coisa. Quando nossas esperanças pareciam perdidas... Um homem com roupas apertadas nas cores vermelho e azul voa para nos salvar. Sozinho ele consegue acabar com a invasão.</p>
+                        </article>
+                    </section>
+                    <section class="linha2" class="d1">
+                        <article>
+                            <p>Jimmy conseguiu tirar uma foto de perto dele. Ele não parecia ter mais do que 20 anos. Mas tinha mais coragem e determinação do que qualquer homem que já pisou nessa Terra.</p>
+                        </article>
+                    </section>
+                    <div class="d1">
+                        <h2 class=".autoshow">SUPERMAN SALVA O DIA</h2>
+                        <img src="superman 3.jpg" alt="superman" class="super2">
+                        <h3>(Foto por Jimmy Olsen)</h3>
+                    </div>
+                    
+                    <section class="d1">
+                        <article>
+                            <p><strong>Superman</strong> mais uma vez mostra seu heroismo salvando as pessoas de um monstro apelidado de <strong>"Parasita"</strong>.</p>
+                        </article>
+                    </section>
+                    <section class="d1">
+                        <article>
+                            <p>Aparentemente, a criatura tem o poder de absorver energia vital das pessoas (até mesmo do Superman) e as transforma em energia para o próprio corpo o tornando cada vez mais forte. </p>
+                        </article>
+                    </section>
+                    <section class="d1">
+                        <article>
+                            <p>Mais tarde, ele foi identificado como <strong>Rudy Jones</strong>, zelador do Planeta Diário que conseguiu uma oportunidade para "mudar de vida" na Lexcorp.</p>
+                        </article>
+                    </section>
+                    <section class="d1">
+                        <article class="linha2">
+                            <p><strong>Lex Luthor</strong> e a <strong>Lexcorp</strong> negam qualquer envolvimento com a mutação do mesmo. Mas será que eles escondem algo por trás desse altruísmo todo?</p>
+                            <img src="superman 7.jpg" alt="superman" class="super2">
+                        </article>
+                    </section>
+                    <div class="d1">
+                        <h2 class=".autoshow">METALLO</h2>
+                        <img src="superman 5.jpg" alt="metallo" class="super2">
+                        <h3>(Foto por Jimmy Olsen)</h3>
+                        <h3 class="strong"><strong>por CLARK KENT
+                        repórter do Planeta Diário.</strong></h3>
+                    </div>
+                    <section class="d1">
+                        <article>
+                            <p>Mais uma vez, Superman salva o dia. Mas não como qualquer outra vez. Superman enfrenta o que parece um confronto contra o "exército americano?" O combate ocorreu bem nas ruas movimentadas de Metropolis. Os soldados não economizaram nas balas. Mesmo com o desprezo e o confronto. Superman tenta não machucar ninguém.</p>
+                        </article>
+                    </section>
+                    <section class="d1">
+                        <article>
+                            <p>Ele se coloca na frente das pessoas pedindo para pararem pois vidas inocentes podem ser perdidas. Ele não parecia querer um confronto. Parecia estar se esforçando para proteger as pessoas.</p>
+                        </article>
+                    </section>
+                    <section class="d1">
+                        <article>
+                            <p>Um novo inimigo surge na cena identificado como Sargento John Corben. Estranhamente ele possui uma armadura e o rosto deformado. Mas ele se empolga querendo "vingança" contra o Superman e acaba colocando a vida até mesmo dos aliados em risco.</p>
+                        </article>
+                    </section>
+                    <section class="linha2" class="d1">
+                        <article>
+                            <p>Mesmo em desvantagem por causa de uma pedra verde no peito do Sargento que parecia enfraquecer ele. Superman usa suas últimas forças para arremessar uma tampa de bueiro e soldá-la no peito do Sargento. Com as forças recuperadas, ele derrota o Sargento (agora chamado de Metallo) o derrubando ao chão.</p>
+                        </article>
+                    </section>
+                    <div class="d1">
+                        <h2 class=".autoshow">SUPERMAN FAZ DISCURSO NA ONU</h2>
+                        <img src="superman 9.jpg" alt="ONU" class="super2">
+                        <h3>(Foto pela ONU)</h3>
+                        <h3 class="strong"><strong>por LOIS LANE
+                        repórter do Planeta Diário.</strong></h3>
+                    </div>
+                    <section>
+                        <article>
+                            <p>Após várias controversas sobre a "invasão" e queda da ditadura na Borada ocasionada pelo "Homem de aço". O mesmo reconhece seu erro (ou acerto) e faz um discurso emocionante sobre o que será do mundo e do mesmo a partir de agora.</p>
+                        </article>
+                    </section>
+                    <section class="linha2">
+                        <article>
+                            <p>Seu discurso parece inspirar e gerar opiniões positivas nas pessoas. Será que agora ele seguirá pelo caminho do bem e será o "símbolo da esperança" que tanto falamos?</p>
+                        </article>
+                    </section>
+                    <div class="d1">
+                        <h2 class=".autoshow">ESPERANÇA</h2>
+                        <img src="superman 10.jpg" alt="metallo" class="super2">
+                        <h3>(Foto por Jimmy Olsen)</h3>
+                        <h3 class="strong"><strong>por CLARK KENT
+                        repórter do Planeta Diário.</strong></h3>
+                    </div>
+                    <section>
+                        <article>
+                            <p>Após alguns meses longe dos holofotes, Lex Luthor, em um evento organizado em seu mais novo prédio recém-fundado, apresenta um protótipo de "mulher-android".</p>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <p>Sua intenção é usá-la como uma concorrente do Superman como sendo "A mais nova heroína da cidade". O todo-poderoso Lex Luthor acredita que precisamos de "Esperança", por isso a batizou com o nome do mesmo.</p>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <p>Lex Luthor, o mesmo que há alguns meses andou trabalhando com o governo para derrubar o Superman e vendia um "método milagroso" para mudar a vida das pessoas (o qual foi desmacarado pelo Superman). </p>
+                        </article>
+                    </section>
+                    <section class="linha2">
+                        <article>
+                            <p>Será que após muitas polêmicas envolvendo o Sr. Luthor... isso seria uma forma de se redimir, ou uma estratégia de marketing?</p>
+                        </article>
+                    </section>
+                    <div class="d1">
+                        <h2 class=".autoshow">EXPLOSÃO NA JOALHERIA CAUSA INÚMERAS MORTES</h2>
+                        <img src="superman 8.jpg" alt="metallo" class="super2">
+                        <h3>(Foto por Jimmy Olsen)</h3>
+                        <h3 class="strong"><strong>por CLARK KENT
+                        repórter do Planeta Diário.</strong></h3>
+                    </div>
+                    <section>
+                        <article>
+                            <p>Na manhã desta terça-feira, uma explosão ocorreu dentro de uma joalheria próxima à um orfanato. </p>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <p>A explosão matou inúmeros homens, mulheres, e principalmente crianças. Com os esforços da nova heroína "Esperança" e de nossos policiais. Muitas vidas foram poupadas. </p>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <p>O causador do ocorrido foi identificado como Winslow Schott (apelidado de Homem-brinquedo) causou a explosão com um explosivo dentro de uma boneca. Ele enfrentou o Superman uma vez no passado, mas perdeu humilhantemente. Ele possui uma ficha criminal bem extensa com vários crimes envolvendo abuso infantil e sérios problemas mentais.</p>
+                        </article>
+                    </section>
+                    <section class="linha2">
+                        <article>
+                            <p>Ele estava em um programa de reabilitação do governo. Mas sua reabilitação será revogada e ele será encaminhado novamente para prisão de Belle Reeve.</p>
+                        </article>
+                    </section>
+                    <div class="d1">
+                        <h2 class=".autoshow">TORRE DE LEX LUTHOR EXPLODE!</h2>
+                        <img src="superman 11.jpg" alt="metallo" class="super2">
+                        <h3>(Foto capturada por helicóptero)</h3>
+                        <h3 class="strong"><strong>por CLARK KENT
+                        repórter do Planeta Diário.</strong></h3>
+                    </div>
+                    <section>
+                        <article>
+                            <p>Um exército de soldados de brinquedo deixados pelo homem-brinquedo causou intrigas no centro de Metropolis. Superman e Esperança surgem para salvar a cidade mais uma vez. Mas ela se empolga e quase atinge uma criança. </p>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <p>Isso gera um combate intenso entre os dois aonde Esperança misteriosamente... explode. Levando a torre do Sr. Luthor no processo. Ainda não temos informações sobre o que possa ter acontecido.</p>
+                        </article>
+                    </section>
+                    <section class="linha2">
+                        <article>
+                            <p>A Lexcorp continua negando qualquer envolvimento com isso e não divulgaram o motivo da explosão que gerou um choque enorme no povo de Metropolis.</p>
+                        </article>
+                    </section>
+    
+</body>
+</html>

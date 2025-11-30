@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Superman</title>
+        <link rel="stylesheet" href="style.css"> 
+<style>
+    *{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body {
+        background-image: linear-gradient(to top, #9A2E00, black, #073660);
+        background-attachment: fixed;
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.5);;
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .d2, .elenco, footer {
+            animation: appear 0.8s linear;
+            animation-timeline: view();
+        }
+
+    header {
+    background-color: #095699;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    h1 {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #004C80, #105689, #1C6BC7);
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    }
+
+    h1 > a {
+    color: white;
+    text-decoration: none;
+    }
+
+    h1 img {
+    position: absolute;
+    height: 60px;
+    border-radius: 10px;
+    left: 42.5%;
+    top: 5%;
+    translate: (-48%, -10%);
+    }
+
+    h1 > a {
+    color: white;
+    text-decoration: none;
+    }
+
+    h1 {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #004C80, #105689, #1C6BC7);
+    padding: 40px;
+    margin-top: 20px;
+    }
+
+    h2 {
+        margin-bottom: 0px;
+    }
+
+    h3 {
+        background-color: black; color: white;
+        margin: 0px 10px 0px 10px;
+        padding: 10px;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    nav {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    }
+
+    nav > a {
+    display: inline-block;
+    background-color: #095699;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 0px 10px;
+    }
+
+    nav > a:hover {
+        background-color:#1782df;
+        padding: 6px;
+        transition: 0.5s;
+    }
+
+    section {
+        background-color: black;
+    }
+
+    .elenco img {
+        background-color: black;
+        width: 70%;
+        margin-left: 13vw;
+        padding: 20px;
+    }
+
+    .elenco1 {
+        text-decoration: none;
+        color: red;
+        font-weight: bolder;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    
+    .elenco1:hover {
+        background-color: white;
+        transition: 0.5s;
+        padding: 5px 5px 0px 5px;
+    }
+
+    p {
+        background-color: black; color: white;
+        margin-left: 30px;
+        font-size: 20px;
+    }
+
+    .d2 img {
+        width: 96vw;
+        height: 450px;
+    }
+
+    .logo {
+        width: 100%;
+        height: 500px;
+    }
+
+    footer {
+        background-color: black;
+        padding: 10px;
+    }
+    
+    footer img {
+        height: 40px;
+        width: 40px;
+    }
+
+    footer img:hover {
+        background-color: transparent;
+        padding: 2px;
+    }
+
+    .tudum {
+        position: absolute;
+        width: 100px;
+        height: 54px;
+        left: 50%;
+    }
+
+    .insta {
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <!-- Em HTML é id = em CSS é # -->
+    <!-- em HTML é class = em CSS é . -->
+    <!-- Representação por nomes -->
+    <header>
+        <h1> <a href="index.html"><img src="superman name.jpg" alt="superman name"></a></h1>
+            <nav>
+                <a href="index2.html" id="n1"> Planeta Diário</a>
+                <a href="index3.html" id="n2"> Personagens</a>
+            </nav>
+    </header>
+
+    <div class="d2">
+        <section>
+            <h2><img src="tudum.jpg" alt="tudum_ia" class="tudum_ia"></h2>
+            <h2><img src="superman logo 3 (1).jpg" alt="logo" class="logo"></h2>
+        </section>
+    </div>
+
+            <div class="elenco">
+                <section>
+                    <h3>ELENCO</h3>
+                    <img src="rick.jpg" alt="rick">
+                    <p><strong>Rick Grayson - Diretor</strong></p><a href="https://www.instagram.com/agnt_rick.grayson/" class="elenco1">@agnt_rick.grayson</a>
+                </section>
+                <div class="elenco">
+                    <section>
+                        <img src="joshua.jpg" alt="joshua">
+                        <p><strong>Joshua Davies - Superman</strong></p><a href="https://www.instagram.com/joshua._ia/" class="elenco1">@joshua._ia</a>
+                    </section>
+                </div>
+            </div>
+            <div class="elenco">
+                <section>
+                    <img src="depp.jpg" alt="depp">
+                    <p><strong>Johnny Depp - Lex Luthor</strong></p><a href="https://www.instagram.com/jdeppia/" class="elenco1">@jdeppia</a>
+                </section>
+            </div>
+            <div class="elenco">
+                <section>
+                    <img src="bianca.jpg" alt="bianca">
+                    <p><strong>Bianca Mancinni - Lois Lane</strong></p><a href="https://www.instagram.com/bianca_mancinni_/" class="elenco1">@bianca_mancinni_</a>
+                </section>
+            </div>
+            <div class="elenco">
+                <section>
+                    <img src="bella.jpg" alt="bella">
+                    <p><strong>Bella Mancinni - Lana Lang</strong></p><a href="https://www.instagram.com/bella.mancinni_/" class="elenco1">@bella.mancinni_</a>
+                </section>
+            </div>
+            <div class="elenco">
+                <section>
+                    <img src="douglas.jpg" alt="douglas">
+                    <p><strong>Douglas Sanchez - Jimmy Olsen</strong></p><a href="https://www.instagram.com/douglas_sanchez120/" class="elenco1">@douglas_sanchez120</a>
+                </section>
+            </div>
+            <div class="elenco">
+                <section>
+                    <img src="lola.jpg" alt="lola">
+                    <p><strong>Lola Mitchell - Mona</strong></p><a href="https://www.instagram.com/loia.mitchell/" class="elenco1">@loia.mitchell</a>
+                </section>
+            </div>
+            <div class="elenco">
+                <section>
+                    <img src="vanessa.jpg" alt="vanessa">
+                    <p><strong>Vanessa Depp - Alexandra Luthor</strong></p><a href="https://www.instagram.com/vanessapvu/" class="elenco1">@vanessapvu</a>
+                </section>
+            </div>
+        </main>
+
+    <footer class="d1">
+        <a href="https://www.instagram.com/tudum_ia/" target="_blank" rel="external"><img src="instagram logo.png" alt="instagram" class="insta"></a>
+        <img src="tudum.jpg" alt="tudum" class="tudum">
+    </footer>
+
+</body>
+</html>
