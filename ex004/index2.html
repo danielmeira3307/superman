@@ -28,7 +28,7 @@
 
         h1 {
             background-color: whitesmoke;
-            padding: 20px 0px;
+            padding: 20px 1px;
             font-family: 'Old London', sans-serif;
             font-size: 10vw;
             font-weight: normal;
@@ -37,7 +37,7 @@
         }
 
         nav {
-        padding: 10px 0px 10px 5px;
+        padding: 10px 1px 10px 5px;
         border-bottom: 2px solid black;
         }
         nav > a {
@@ -93,16 +93,22 @@
         }
 
         p {
-            padding-left: 60px;
+            padding-left: 10%;
             padding-top: 10px;
-            font-size: 18px;
-            margin-right: 10vw;
+            font-size: 20px;
+            margin-right: 9vw;
         }
 
-        #inline {
-            display: inline-block;
-            width: 100px;
-            height: 40px;
+        .inline {
+            width: 50%;
+            font-size: 30px;
+            line-height: 1.5;
+            margin-left: 0px;
+        }
+
+        .inline > p {
+            padding: 10px 0px 0px 0px;
+            margin-right: 0px;
         }
 
         img {
@@ -118,10 +124,24 @@
         }
 
         .super3 {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+
+            width: 100%;
+            margin: 0px;
+
+            max-width: 1200px; /* impede scroll horizontal */
+            padding: 10px 0px 10px 0px;
+        }
+
+        .super3 img {
+            width: 45%;
+            max-width: 600px;
+            height: 350px;
             border: 2px solid black;
-            width: 50%;
-            height: 500px;
-            margin-left: 13vw;
+            margin-left: 8vw;
         }
 
         .linha {
@@ -133,9 +153,8 @@
         .linha2 {
             border-bottom: 2px solid black;
             padding-bottom: 10px;
-            margin: 0px 20px;
+            margin: 0px 13px 0px 13px;
         }
-
         footer {
         display: block;
         background-color: black;
@@ -145,13 +164,6 @@
     footer img {
         height: 40px;
         width: 40px;
-    }
-
-    .tudum {
-        position: absolute;
-        width: 100px;
-        left: 50%;
-
     }
     </style>
 </head>
@@ -270,9 +282,9 @@
                             <p>Eu e Jimmy estávamos discutindo com nosso editor-chefe Perry White, quando uma nave alienígena chegou em Metropolis e em poucos minutos tomou conta dos céus e das ruas da cidade. Eu e Jimmy corremos para vermos de perto.</p>
                         </article>
                     </section>
-                    <section class="d1">
-                        <img src="superman 1.jpg" alt="robo" class="super3">
-                        <article id="inline">
+                    <section class="super3">
+                        <img src="superman 1.jpg" alt="robo">
+                        <article class="inline">
                             <p>O sujeito se manisfestou na televisão e se identificou como Brainiac, um "destruidor de planetas" que rouba o conhecimento de cada planeta que invade.</p>
                         </article>
                     </section>
