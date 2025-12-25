@@ -5,18 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planeta Diário</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
-    <link rel="stylesheet" href="style.css" media="print">
+
     <style>
-
-        .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-        }
-
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         @font-face {
             font-family: 'Old London';
@@ -49,22 +39,69 @@
         }
 
         nav {
-        padding: 10px 1px 10px 5px;
-        border-bottom: 2px solid black;
-        }
-        nav > a {
-            display: inline-block;
-            background-color:  white ; color: black;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-            padding: 0px 10px;
-        }
-        nav > a:hover {
-            background-color: black; color: white;
-            padding: 5px 20px;
-            transition: 0.5s;
-        }
+    padding: 10px 1px 10px 5px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+/* Links padrão (desktop) */
+nav > a {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+/* Botão hamburguer */
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+nav button img {
+    width: 40px;
+    height: 30px;
+}
+
+/* Hover */
+nav > a:hover {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+
+/* 📱 MOBILE */
+@media screen and (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav button {
+        display: block;
+        margin-left: 10px;
+    }
+
+    nav > a {
+        display: none;
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    /* quando o menu estiver ativo */
+    nav.ativo > a {
+        display: block;
+    }
+}
 
         h2 {
             font-size: 15vw;
@@ -183,10 +220,15 @@
             <header>
                 <h1 class="linha">Planeta <img src="planeta diario-Photoroom.png" alt="planeta Diário"> Diário</h1>
             </header>
-            <nav>
-                <a href="index.html" id="n1"> Home</a>
-                <a href="index3.html" id="n2"> Personagens</a>
+            <nav class="icon">
+                <button id="btn-menu">
+                    <img src="icon.png" alt="Menu">
+                </button>
+            
+                <a href="index.html" id="n1">Home</a>
+                <a href="index3.html" id="n2">Personagens</a>
             </nav>
+            
                 <div>
                     <h2 class=".autoshow">"S" É DE...</h2>
                     <img src="superman 6.jpg" alt="" class="super2">
@@ -457,6 +499,14 @@
                             <p>A Lexcorp continua negando qualquer envolvimento com isso e não divulgaram o motivo da explosão que gerou um choque enorme no povo de Metropolis.</p>
                         </article>
                     </section>
-    
+                    <script>
+                        const botao = document.getElementById("btn-menu");
+                        const nav = document.querySelector("nav");
+                    
+                        botao.addEventListener("click", () => {
+                            nav.classList.toggle("ativo");
+                        });
+                    </script>
+                    
 </body>
 </html>
